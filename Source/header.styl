@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@media only screen and (min-width: 993px)
+	.container
+		width: 80%
+
 .top-slider
 	// display flex
 	background #888
@@ -104,8 +108,8 @@ button, select {
 	text-transform: uppercase;
 
 .top-slider button {
-	// display block
 	margin 8rem auto 9rem auto
+	// display block
 	font-weight: 500;
 	// padding-left: 50px;
 	// padding-right: 50px;
@@ -142,6 +146,11 @@ button, select {
 	margin-bottom 3rem
 
 
+@media only screen and (max-width: 1300px)
+	.top-slider button
+		margin 8rem auto 8rem auto
+	.top-slider h1
+		margin: 1rem 0 3rem
 @media only screen and (max-width: 992px)
 	.top-slider h1
 		font-size: 5rem
