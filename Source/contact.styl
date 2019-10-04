@@ -5,7 +5,7 @@
 .form
 	border 1px solid #adadad
 	box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.25)
-	padding 0 15% 30px 15%
+	padding 0 0 30px 0
 
 .form_small_cell
 	margin-bottom: 6rem
@@ -17,13 +17,13 @@
 	color #888
 
 .form .button
+	font-size: 2rem
 	display block
 	color #fff
 	margin 2rem auto 4rem auto
 	font-weight: 300
 	background-color: #000093
 	border: 0px solid #000
-	font-size: 2rem
 	box-shadow: none
 
 .form_input
@@ -51,8 +51,8 @@
 @media only screen and (max-width: 992px)
 	.contact
 		padding 0 10px 3rem 10px !important
-		padding 0 0 2rem 0 !important
-	
+		padding 0 .75rem 2rem .75rem !important
+
 	.form
 		border 0px solid #adadad
 		box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25)
@@ -60,4 +60,20 @@
 
 	.form_input
 		width 100% !important
+
+	.form .button
+		font-size: 18px
+
+@media only screen and (max-width: 600px)
+	.contact
+		padding 0 .75rem 2rem .75rem !important
+		.feature_item
+			padding-left 10px
+	.form .button
+		font-size: 14px
+	.button
+		height 74px
+		width 270px
+		border-radius: 37px
+
 

@@ -12,6 +12,10 @@
 	display block
 	margin 2rem auto
 
+.expert_text_icon_2
+	display block
+	margin 2rem auto
+
 .expert_text_icon_mod
 	padding-top: 7px
 	padding-bottom: 7px
@@ -19,7 +23,10 @@
 .icon_big2
 	display block
 	margin 2rem auto
-.icon_big2_mod
+// .icon_big2_mod
+
+.feature_wrap-item
+	display flex
 
 .expert_text_feature
 	font-size: 22px
@@ -51,14 +58,26 @@
 .security_bg
 	background-image: url('../Build/img/BG_architecture.jpg')
 	background-size: cover
+	position relative
+	overflow hidden
+	z-index: -2
 
-.security_bg_layersWhite
+
+.security_bg:after
+	content: ""
+	position absolute
 	background-color rgba(256, 256,256 .9)
+	z-index: -1
+	top 0
+	right 0
+	bottom 0
+	left 0
+	height 100%
+	width 100%
 
 .security_h2
 	font-size: 4.4rem
 	padding: 9rem 0 0 0
-
 
 .flex-wrap
 	display flex
@@ -67,16 +86,8 @@
 .expert_text_item
 	margin-bottom 6rem
 
-.w90
-	display flex
+.expert_text_p
 	width 90%
-	margin: auto
-	// word-wrap: break-word
-
-.w80
-	display block
-	width 80%
-	margin: auto
 
 .check
 	width 26px
@@ -109,7 +120,7 @@
 	padding-left 0
 	padding-right 0
 	margin 6rem auto 1rem auto
-
+	white-space nowrap
 
 .h2-4_4rem
 	font-size: 4.4rem
@@ -121,9 +132,28 @@
 .work_bg
 	background-image: url('../Build/img/laptop2.jpg')
 	background-size: 100%
+	background-size: cover
 	background-position: center
+	position relative
+	overflow hidden
+	z-index: -2
+
+
+.work_bg:after
+	content: ""
+	position absolute
+	background-color rgba(256, 256,256 .9)
+	z-index: -1
+	top 0
+	right 0
+	bottom 0
+	left 0
+	height 100%
+	width 100%
+
 .expert_text_feature_what
 	font-size: 20px
+
 
 @media only screen and (max-width: 992px)
 	.expert_text_feature
@@ -131,11 +161,13 @@
 		&_what
 			margin-left: 0
 	.expert_text_bigImg_overflow_hidden
-		overflow hidden
 		margin-right: 0
 	.expert_text_bigImg_overflow_hidden img
 		margin: auto
 		display: block
+		width 100%
+		max-width 630px
+		height auto
 	.top-slider_feature_wrap-item
 		width 400px
 		padding-left 74px
@@ -143,18 +175,16 @@
 		margin-top 4rem
 	.h2-4_4rem
 		font-size: 36px
+		line-height: 45px
 	.expert_text_feature
 		font-size: 18px
 	.p2rem
 		font-size: 18px
 	.p3rem
 		font-size: 24px
-	.expert_text_icon
+	.expert_text_icon_2
 		height 80px
-		width 80px
-	.expert_text_icon_mod
-		height 80px
-		width 85px
+		width auto
 
 	.icon_big2
 			height 93px
@@ -169,21 +199,29 @@
 		font-size: 18px
 
 
+@media only screen and (max-width: 700px)
+	.expert_text_bigImg
+		height auto
+		width 100%
+
+
+
 @media only screen and (max-width: 600px)
 	.expert_text_feature
 		font-size: 14px
 	.h2-4_4rem
 		font-size: 30px
+		padding-left 0
+		padding-right 0
+		margin 6rem auto 4rem auto
+		line-height: 40px
 	.p2rem
 		font-size: 16px
 	.p3rem
 		font-size: 17px
-	.expert_text_icon
+	.expert_text_icon_2
 		height 50px
-		width 50px
-	.expert_text_icon_mod
-		height 50px
-		width 53px
+		width auto
 
 	.icon_big2
 			height 77px
@@ -193,6 +231,22 @@
 		padding-left 70px
 
 	.h2-3_6rem
-		font-size: 28px
+		font-size: 30px
+		padding-left 0
+		padding-right 0
+		line-height: 40px
+		margin 6rem auto 2rem auto
+
 	.expert_text_feature_what
 		font-size: 16px
+
+	.expert_text_p
+		font-size 14px
+		color: #484848
+
+@media only screen and (max-width: 420px)
+	.top-slider_feature_wrap-item
+		padding-left: 12%
+@media only screen and (max-width: 350px)
+	.top-slider_feature_wrap-item
+		padding-left: 8%

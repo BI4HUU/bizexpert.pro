@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "gulp-coffee": "^3.0.3",
-    "gulp-coffeescript": "0.0.15"
+    "gulp-coffeescript": "0.0.15",
+    "local-web-server": "^3.0.7"
   }
 }

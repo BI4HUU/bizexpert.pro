@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@media only screen and (min-width: 100px)
+	.container
+		width: 100%
+@media only screen and (min-width: 600px)
+	.container
+		width: 90%
 @media only screen and (min-width: 993px)
 	.container
 		width: 80%
-
+section
+	overflow: hidden
 .top-slider
 	// display flex
 	background #888
@@ -55,10 +62,9 @@ h1, h2, h3, h4, h5, h6 {
 	align-items: center;
 }
 
-.top-slider h1 {
+.top-slider h1
 	font-size: 6rem
 	font-weight: 400
-}
 
 .top-slider span {
 	font-size: 22px;
@@ -100,10 +106,10 @@ button, select {
 .button
 	height 76px
 	width 310px
+	border-radius: 38px
 	color: white;
 	font-family: "Open Sans";
 	font-size: 16px;
-	border-radius: 38px;
 	white-space: nowrap
 	text-transform: uppercase;
 
@@ -130,10 +136,10 @@ button, select {
 	margin-top 1px
 }
 
-.top-slider_feature_wrap-item {
+.top-slider_feature_wrap-item
 	margin auto
 	display flex
-	}
+
 .top-slider_feature {
 	display inline-block
 	color: #ffffff
@@ -151,8 +157,21 @@ button, select {
 		margin 8rem auto 8rem auto
 	.top-slider h1
 		margin: 1rem 0 3rem
+
+
 @media only screen and (max-width: 992px)
 	.top-slider h1
 		font-size: 5rem
+
 	.top-slider span
 		font-size: 20px
+		margin 3rem auto 0rem auto
+
+
+@media only screen and (max-width: 600px)
+	.top-slider h1
+		font-size: 36px
+
+	.top-slider span
+		font-size: 14px
+		margin 2rem auto 0rem auto
