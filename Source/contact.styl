@@ -1,3 +1,8 @@
+.wrap_contact_form
+	margin-top 90px
+	padding 14px
+
+
 .contact
 	padding 0 10px 3rem 10px !important
 	font-weight: 400
@@ -6,6 +11,7 @@
 	border 1px solid #adadad
 	box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.25)
 	padding 0 0 30px 0
+	// margin-right: 10px
 
 .form_small_cell
 	margin-bottom: 6rem
@@ -30,10 +36,12 @@
 	margin-left auto !important
 	margin-right auto !important
 	width 70% !important
+	max-width 420px !important
 	display block
 	color #000 !important
 	font-size: 1.9rem !important
 	padding-left: 10px !important
+	padding-right: 10px !important
 	margin-bottom: 5rem !important
 
 
@@ -49,14 +57,20 @@
 
 
 @media only screen and (max-width: 992px)
+	.wrap_contact_form
+		margin-top 0
+		margin-bottom 0
+		padding 0
+
 	.contact
-		padding 0 10px 3rem 10px !important
-		padding 0 .75rem 2rem .75rem !important
+		// padding 0 10px 3rem 10px !important
+		padding 0 .75rem 0 .75rem !important
 
 	.form
 		border 0px solid #adadad
 		box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25)
 		padding 0 0 2rem 0
+		// margin-right: 0
 
 	.form_input
 		width 100% !important
