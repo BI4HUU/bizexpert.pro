@@ -6,10 +6,11 @@ html(lang="ru")
 		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
 		//- link(href='bootstrap.css' rel='stylesheet' type='text/css')
-		//- link(href='style.css' rel='stylesheet' type='text/css')
-		style
-			include ../Build/materialize.min.css
-			include ../Build/style.css
+		link(href='materialize.min.css' rel='stylesheet' type='text/css')
+		link(href='style.css' rel='stylesheet' type='text/css')
+		//- style
+		//- 	include ../Build/materialize.min.css
+		//- 	include ../Build/style.css
 		base(target="_blank")
 	body
 		include header
@@ -19,8 +20,8 @@ html(lang="ru")
 	//- 	include ../Build/jquery.min.js
 	//- script
 	//- 	include ../Build/parallax.min.js
-	script(src=" ../Build/jquery.js ")
-	script(src=" ../Build/jquery-migrate.min.js ")
-	script(src=" ../Build/parallax.min.js ")
-	script(src=" ../Build/slick.min.js ")
+	script(src=" jquery.js ")
+	script(src=" jquery-migrate.min.js ")
+	script(src=" parallax.min.js ")
+	script(src=" slick.min.js ")
 	script(src=" http://127.0.0.1:35729/livereload.js?ext=Firefox&extver=0.0.46 ")
